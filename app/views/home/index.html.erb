@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
-  <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker" >
+  <link rel="stylesheet" href="../assets/stylesheets/styles.css.erb">
 </head>
 <body>
 
@@ -18,20 +18,29 @@
         </div>
         <ul class= "navhaute">
               <li><button class="btn btn-primary btn-round" type "button">Home </li>
-              <li><button class="btn btn-primary btn-round" type "button">testarossa </li>
-              <li><button class="btn btn-primary btn-round" type "button">supercotper </li>
+              <li><button class="btn btn-primary btn-round" type "button">Style </li>
+              <li><button class="btn btn-primary btn-round" type "button">Boutique </li>
         </ul>
-        <div class="avatar">
-         <img src="https://i.pinimg.com/originals/d7/f7/89/d7f78915c6d576ec29b2244170f892a4.jpg" alt="Avatar" class="avatar">
-       </div>
+
+
+<!--ceci est le dropdown du sale-->
+      <div class="dropdown">
+        <img src="https://i.pinimg.com/originals/d7/f7/89/d7f78915c6d576ec29b2244170f892a4.jpg" alt="Avatar" class="avatar">
+        <div class="dropdown-content">
+        <img src="https://lh3.googleusercontent.com/-62uX1UZ3JIo/VOHUSrVvL-I/AAAAAAAB6YQ/MEQrby4DJmc/s0/Jean%2BClaude%2BVan%2BDamme.jpg" alt="Avatar" class="avatar" width="500" height="350">
+          <div class="desc">OUAIS OUAIS C'EST VAN DAMME</div>
+        </div>
       </div>
+</div>
+
+
 
     </div>
 
       <section class="lt_Banner" style="height: 100vh; color: pink; text-align: center; display: flex; align-items: flex-end; justify-content: space-around;">
         <br>
         <br>
-        <h1 style="font-family:Open Sans; font-size: 100px;
+        <h1 style=" font-size: 75px;
         font-weight: bolder; color: magenta;"> Bienvenue dans les années 80</h1>
 
 
@@ -50,22 +59,49 @@
 	      </div>
 
 	    <input name="tabs" type="radio" id="tab-2" class="input"/>
-	    <label for="tab-2" class="label">Tangerine</label>
+	    <label for="tab-2" class="label">Lamborghini</label>
 	    <div class="panel">
-		      <h1>Tangerine</h1>
+		      <h1>Lamborghini</h1>
 		      <p>The tangerine (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or possibly a type of, mandarin orange (Citrus reticulata).</p>
 		      <p>The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. Under the Tanaka classification system, Citrus tangerina is considered a separate species.</p>
 	    </div>
 
 	       <input name="tabs" type="radio" id="tab-3" class="input"/>
-	       <label for="tab-3" class="label">Clemantine</label>
+	       <label for="tab-3" class="label">Daytona</label>
 	       <div class="panel">
-		      <h1>Clemantine</h1>
+		      <h1>Daytona</h1>
 		      <p>A clementine (Citrus ×clementina) is a hybrid between a mandarin orange and a sweet orange, so named in 1902. The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated into 7 to 14 segments. Similarly to tangerines, they tend to be easy to peel.</p>
 	    </div>
     </div>
+    <div class="cardbox">
+      <div class="card">
+          <%= image_tag("testarossa.jpg", alt:"testa", class: "cardimage") %>
+           <div class="blabla">
+            <h4><b>Testarossa</b></h4>
+           <p>la brute racée</p>
+          </div>
+      </div>
+      <div class="card">
+        <%= image_tag("countach.jpg", alt:"lambo", class: "cardimage") %>
+           <div class="blabla">
+            <h4><b>Lamborghini</b></h4>
+           <p>Trop de muscle</p>
+          </div>
+        </div>
+      <div class="card">
+          <%= image_tag("daytona.jpg", alt:"lambo", class: "cardimage") %>
+            <div class="blabla">
+            <h4><b>Daytona</b></h4>
+            <p>L'italienne americanisée'</p>
+          </div>
+      </div>
 
-  </div>
+
+</div>
+
+
+    </div>
+
 
 </body>
 </html>
