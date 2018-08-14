@@ -2,7 +2,7 @@
 
 .container {
 
-
+  font-family: 'Bad Script', cursive;
   background: linear-gradient(navy,turquoise);
 
   margin: 0 auto;
@@ -24,7 +24,7 @@
   display: flex ;
 flex-direction: row;
 flex-wrap: nowrap ;
-justify-content: center ;
+justify-content: space-between ;
 align-items: center ;
 align-content: center ;
 list-style-type: none;
@@ -162,7 +162,7 @@ body {
 }
 
 .label:active {
-	background: #ccc;
+	background: turquoise;
 }
 
 .input:focus + .label {
@@ -171,8 +171,8 @@ body {
 }
 
 .input:checked + .label {
-	background: #fff;
-	color: #000;
+	background: turquoise;
+	color: navy;
 }
 
 @media (min-width: 600px) {
@@ -183,6 +183,8 @@ body {
 .panel {
 	display: none;
 	padding: 20px 30px 30px;
+  color: turquoise;
+  font-weight: bold;
 	background:linear-gradient(Purple, red);
 }
 
@@ -220,7 +222,7 @@ body {
 /* Add some padding inside the card container */
 .blabla{
     padding: 2px 16px;
-    background-color: magenta;
+    background: linear-gradient(red, yellow);
 
 }
 
